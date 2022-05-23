@@ -1,0 +1,443 @@
+@import 'var-mixins';
+
+ body, main, footer, p, h1, ul, li{
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// HEADER
+.header-img{
+    background: url('../coffeeshop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    overflow-x: hidden !important; 
+    overflow-y: hidden !important;
+    @include display(large){
+        height: auto;
+    }
+}
+
+.container-header{
+    margin-left: 100px;
+    .header-nav{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        h2{
+            @include title-text(32px);
+        }
+        .header-list{
+            margin-right: 100px;
+            ul{
+                display: flex;
+                transition: 0.8s;
+                @include title-text(20px);
+                @include display(large){
+                    padding-top: 50px;
+                }
+                @include display(small){
+                    padding-top: 10px;
+                    display: block;
+                }
+            }
+            li{
+                font-size: 16px;
+                padding-left: 40px;
+                @include display(small){
+                padding-left: 5px;
+                @include title-text(14px);
+                transition: 0.8s;
+            }
+            }
+            a{
+                color: white;
+                transition: 0.8s;
+                &:hover{
+                    color: #5a4cec;
+                }
+            }
+            // BUTTON
+            input{
+                @include title-text(20px);
+                margin-top: -20px;
+                margin-left: 50px;
+                background: transparent;
+                width: 150px;
+                height: 50px;
+                border: 1px solid white;
+                border-radius: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                transition: 0.90s;
+                @include display(small){
+                @include title-text(10px);
+                    width: 100px;
+                    height: 40px;
+                }
+                &:hover{
+                    border: 2px solid $purple-3;
+                    color: white;
+                    background: $purple-3;
+                }
+            }
+        }
+    }
+    .img-texts{
+        display:block;
+        align-items: flex-start;
+        margin-top: 180px;
+        @include display(large){
+            padding-top: 100px;
+        }
+        @include display(small){
+            padding-top: 10px;
+        }
+        h1{
+            @include title-text(200px);
+            @include display(large){
+                @include title-text(120px);
+            }
+            @include display(small){
+                @include title-text(40px);
+            }
+        }
+        h2{
+            margin-top: 50px;
+            @include title-text(32px);
+            @include display(small){
+                @include title-text(12px);
+            }
+        }
+        p{
+            margin-top: 20px;
+            @include text-p(28px, $color-main);
+            @include display(small){
+                @include title-text(14px);
+                padding-top: 18px;
+            }
+        }
+        
+        // SECOND BUTTON
+        input{
+            @include title-text(32px);
+            background: transparent;
+            border: 2px solid white;
+            margin-top: 28px;
+            width: 350px;
+            height: 80px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.90s;
+            @include display(small){
+                @include title-text(10px);
+                width: 100px;
+                height: 40px;
+            }
+            &:hover{
+                border: 2px solid $purple-3;
+                color: white;
+                background: $purple-3;
+            }
+          }
+      }
+}
+
+
+
+
+// MAIN
+.container-main{
+    padding: 80px;
+    background-image: linear-gradient($dark-purple, $purple-1, $purple-2);
+    color: $color-main;
+    @include display(small){
+        padding: 5px;
+    }
+}
+.main-flex{
+    display: flex;
+    justify-content: space-between;
+    @include display(small){
+        display:block;
+    }
+}
+
+.main-text, .main-title2{
+    @include title-text(28px);
+}
+
+.main-info{
+    @include title-text(18px);
+    margin-top: 60px;
+    border-top: 2px solid lighten($purple-2, 40%);
+    span{
+        color:#7c7c7c;
+    }
+}
+
+.main-text2{
+    @include text-p(20px, $color-secondary);
+    padding: 10px 0px 25px 0px;
+    border-bottom: 2px solid $dark-purple;
+    @include display(small){
+        @include text-p(14px, $color-secondary);
+        padding-top: 30px;
+    }
+}
+
+
+
+// Section Cards
+.card-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 26px;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+    width: 300px;
+    min-width: 250px;
+    padding: 1.5rem;
+    background: $purple-3;
+    box-shadow: 10px 15px 10px 0px rgba(19, 19, 19, 0.788);
+    border-radius: 10px;
+    transition: 0.2s;
+    min-width: 140px;
+    border-bottom: 4px solid rgb(19, 19, 19);
+    @include display(small){
+        height: auto;
+        width: 240px;
+    }
+}
+
+.card:hover{
+    height: 528px;
+    transform: translateY(30px);
+    @include display(small){
+       transform:none;
+       height: auto;
+    }
+}
+.card{
+    img:hover{
+    transition: 0.2s;
+    width: 300px;
+    height: 300px;
+    @include display(small){
+        width: 150px;
+        height: 150px;
+        }
+    }
+    img{
+        @include display(small){
+        width: 150px;
+        height: 150px;
+        }
+}
+}
+
+
+.card h3{
+    @include title-text(20px);
+}
+
+.card span{
+    color:#7c7c7c;
+}
+
+.card h1{
+    @include title-text(28px);
+    text-align: center;
+    @include display(small){
+        text-align: left;
+     }
+}
+.card p{
+    @include text-p(20px, $color-secondary);
+    padding-top: 20px;
+    text-align: center;
+    @include display(small){
+        text-align: left;
+     }
+}
+ 
+
+
+
+// Main part 2
+.main-flex2{
+    padding-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    @include display(small){
+        display:block;
+    }
+}
+
+
+.main-text3{
+    padding-bottom: 25px;
+    @include text-p(20px, $color-secondary);
+    border-bottom: 2px solid $dark-purple;
+    @include display(small){
+        @include text-p(14px, $color-secondary);
+        padding-top: 30px;
+    }
+    @include display(small){
+        padding-top: 18px;
+    }
+}
+
+.container-image{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1a57;
+    flex-wrap: nowrap;
+    overflow-x: hidden !important; 
+    overflow-y: hidden !important;
+    @include display(large){
+        flex-wrap: wrap;
+    }
+    @include display(small){
+        margin-top: 0px;
+    }
+}
+.together{
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+.img-text {
+    min-width: 200px;
+    h3{
+        display: flex;
+        justify-content: space-between;
+        background-color: $purple-3;
+        min-width: 100px;
+        height: 100px;
+        padding: 30px 30px 0 30px;
+        @include title-text(24px);
+    }
+    sup{
+        @include text-p(20px, $color-secondary);
+    }
+    .sobre{
+        @include title-text(20px);
+        color: rgb(70, 70, 70);
+        
+    }
+    h4{
+        @include title-text(18px);
+        padding-top: 30px;
+    }
+    p{
+        @include text-p(18px, $color-secondary);
+    }
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    width:500px;
+    @include display(small){
+        display: block;
+    }
+    img{
+        align-self: flex-end;
+    }
+    input{
+    padding: 10px;
+    margin-top: 50px;
+    width: 240px;
+    @include title-text(25px);
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.80s;
+    &:hover{
+        border: 2px solid $purple-3;
+        color: rgb(19, 19, 19);
+        background: $purple-3;
+    }
+    }
+
+}
+
+
+
+// Footer
+.container-footer{
+    background-color: $purple-2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 80px 0px 80px;
+    @include display(small){
+        display: block;
+        justify-content: flex-start;
+     }
+
+    h2{
+        @include title-text(20px);
+    }
+    ul{
+        display: flex;
+        @include display(small){
+            display: block;
+         }
+    }
+    li{
+        padding-top: 20px;
+        padding-left: 40px;
+        img{
+            min-width: 10px;
+            min-height: 10px;
+        }
+    }
+}
+
+.newsletter{
+    input{
+        width: 200px;
+        min-width: 100px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid $purple-3;
+        outline: transparent;
+        @include display(small){
+            padding-top: 40px;
+         }
+    }
+    input{
+        @include text-p(20px, $purple-3);
+    }
+    button{
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        outline: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.80s;
+    }
+}

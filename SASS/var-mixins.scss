@@ -1,0 +1,50 @@
+$color-main: #eeece3;
+$color-secondary: #aaa8a2;
+$font-title: 'Roboto Mono', monospace;
+$font-text: 'Roboto Slab', serif;
+$f-size: 10px;
+$dark-purple: #0f0c29;
+$purple-1: #302b63;
+$purple-2: #24243e;
+$purple-3: #443ab4;
+
+$l-device: 1430px;
+$m-device: 768px;
+$s-device: 636px;
+
+
+// Config Fonts
+@mixin title-text($f-size){
+    font-size: ($f-size);
+    line-height: 1;
+    font-weight: bold;
+    font-family: $font-title;
+    color: $color-main;
+}
+
+
+@mixin text-p($f-size, $color){
+    font-size: ($f-size);
+    line-height: 1;
+    font-family: $font-text;
+    color: $color-main;
+}
+
+@mixin display($size) {
+    @if $size == large {
+      @media screen and (max-width: #{$l-device}) {
+        @content;
+      }
+    } @else if $size == medium {
+      @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
+        @content;
+      }
+    } @else if $size == small {
+      @media screen and (max-width: #{$s-device}) {
+        @content;
+      }
+    }
+  }
+
+// Button Configs
+
