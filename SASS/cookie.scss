@@ -166,119 +166,109 @@ a{
     @include display(small){
         padding: 5px;
     }
-}
-.main-flex{
-    display: flex;
-    justify-content: space-between;
-    @include display(small){
-        display:block;
+    .main-flex{
+        display: flex;
+        justify-content: space-between;
+        @include display(small){
+            display:block;
+        }
+    }
+    .main-title, .main-title2{
+        @include title-text(28px);
+    }
+    .main-info{
+        @include title-text(18px);
+        margin-top: 60px;
+        border-top: 2px solid lighten($purple-2, 40%);
+        span{
+            color:#7c7c7c;
+            margin-right: 10px;
+        }
+    }    
+    .main-text{
+        @include text-p(22px, $color-secondary);
+        line-height: 30px;
+        padding: 10px 0px 25px 0px;
+        border-bottom: 2px solid $dark-purple;
+        @include display(small){
+            @include text-p(14px, $color-secondary);
+            padding-top: 30px;
+        }
     }
 }
-
-.main-text, .main-title2{
-    @include title-text(28px);
-}
-
-.main-info{
-    @include title-text(18px);
-    margin-top: 60px;
-    border-top: 2px solid lighten($purple-2, 40%);
-    span{
-        color:#7c7c7c;
-    }
-}
-
-.main-text2{
-    @include text-p(20px, $color-secondary);
-    padding: 10px 0px 25px 0px;
-    border-bottom: 2px solid $dark-purple;
-    @include display(small){
-        @include text-p(14px, $color-secondary);
-        padding-top: 30px;
-    }
-}
-
-
 
 // Section Cards
 .card-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.card{
-    margin-top: 26px;
-    flex-direction: column;
-    position: relative;
-    height: 500px;
-    width: 300px;
-    min-width: 250px;
-    padding: 1.5rem;
-    background: $purple-3;
-    box-shadow: 10px 15px 10px 0px rgba(19, 19, 19, 0.788);
-    border-radius: 10px;
-    transition: 0.2s;
-    min-width: 140px;
-    border-bottom: 4px solid rgb(19, 19, 19);
-    @include display(small){
-        height: auto;
-        width: 240px;
-    }
-}
-
-.card:hover{
-    height: 528px;
-    transform: translateY(30px);
-    @include display(small){
-       transform:none;
-       height: auto;
-    }
-}
-.card{
-    img:hover{
-    transition: 0.2s;
-    width: 300px;
-    height: 300px;
-    @include display(small){
-        width: 150px;
-        height: 150px;
-        }
-    }
-    img{
+    .card{
+        margin-top: 26px;
+        flex-direction: column;
+        position: relative;
+        height: 500px;
+        width: 300px;
+        min-width: 250px;
+        padding: 1.5rem;
+        background: $purple-3;
+        box-shadow: 10px 15px 10px 0px rgba(19, 19, 19, 0.788);
+        border-radius: 10px;
+        transition: 0.2s;
+        min-width: 140px;
+        border-bottom: 4px solid rgb(19, 19, 19);
         @include display(small){
-        width: 150px;
-        height: 150px;
+            height: auto;
+            width: 240px;
         }
+        h3{
+            @include title-text(20px);
+        }
+        span{
+            color:#7c7c7c;
+        }
+        h1{
+            @include title-text(28px);
+            text-align: center;
+            @include display(small){
+                text-align: left;
+            }
+        }
+        p{
+            @include text-p(20px, $color-secondary);
+            padding-top: 20px;
+            text-align: center;
+            @include display(small){
+                text-align: left;
+            }
+        }
+    }
+    // CARDS EFFECTS
+    .card:hover{
+        height: 528px;
+        transform: translateY(30px);
+        @include display(small){
+           transform:none;
+           height: auto;
+        }
+    }
+    .card{
+        img:hover{
+        transition: 0.2s;
+        width: 300px;
+        height: 300px;
+        @include display(small){
+            width: 150px;
+            height: 150px;
+            }
+        }
+        img{
+            @include display(small){
+            width: 150px;
+            height: 150px;
+            }
+        }
+    }
 }
-}
-
-
-.card h3{
-    @include title-text(20px);
-}
-
-.card span{
-    color:#7c7c7c;
-}
-
-.card h1{
-    @include title-text(28px);
-    text-align: center;
-    @include display(small){
-        text-align: left;
-     }
-}
-.card p{
-    @include text-p(20px, $color-secondary);
-    padding-top: 20px;
-    text-align: center;
-    @include display(small){
-        text-align: left;
-     }
-}
- 
-
 
 
 // Main part 2
