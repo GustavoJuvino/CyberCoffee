@@ -317,8 +317,8 @@ a {
 }
 
 /* line 176, ../projects/CyberCoffee/SASS/cookie.scss */
-.container-main .main-title, .container-main .main-title2 {
-  font-size: 28px;
+.container-main h2 {
+  font-size: 48px;
   line-height: 1;
   font-weight: bold;
   font-family: "Roboto Mono", monospace;
@@ -447,7 +447,7 @@ a {
 /* line 246, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card:hover {
   height: 528px;
-  transform: translateY(30px);
+  transform: translate3d(0, -30px, 0);
 }
 
 @media screen and (max-width: 636px) {
@@ -495,35 +495,7 @@ a {
   }
 }
 
-/* line 285, ../projects/CyberCoffee/SASS/cookie.scss */
-.main-text3 {
-  padding-bottom: 25px;
-  font-size: 20px;
-  line-height: 1;
-  font-family: "Roboto Slab", serif;
-  color: #eeece3;
-  border-bottom: 2px solid #0f0c29;
-}
-
-@media screen and (max-width: 636px) {
-  /* line 285, ../projects/CyberCoffee/SASS/cookie.scss */
-  .main-text3 {
-    font-size: 14px;
-    line-height: 1;
-    font-family: "Roboto Slab", serif;
-    color: #eeece3;
-    padding-top: 30px;
-  }
-}
-
-@media screen and (max-width: 636px) {
-  /* line 285, ../projects/CyberCoffee/SASS/cookie.scss */
-  .main-text3 {
-    padding-top: 18px;
-  }
-}
-
-/* line 298, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-image {
   margin-top: 15px;
   display: flex;
@@ -535,32 +507,32 @@ a {
 }
 
 @media screen and (max-width: 1430px) {
-  /* line 298, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-image {
     flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 636px) {
-  /* line 298, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-image {
     margin-top: 0px;
   }
 }
 
-/* line 313, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 298, ../projects/CyberCoffee/SASS/cookie.scss */
 .together {
   min-width: 300px;
   width: 100%;
   height: 100%;
 }
 
-/* line 319, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 304, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text {
   min-width: 200px;
 }
 
-/* line 321, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 306, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text h3 {
   display: flex;
   justify-content: space-between;
@@ -575,7 +547,7 @@ a {
   color: #eeece3;
 }
 
-/* line 330, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 315, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text sup {
   font-size: 20px;
   line-height: 1;
@@ -583,7 +555,7 @@ a {
   color: #eeece3;
 }
 
-/* line 333, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 318, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text .sobre {
   font-size: 20px;
   line-height: 1;
@@ -593,7 +565,7 @@ a {
   color: #464646;
 }
 
-/* line 338, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 323, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text h4 {
   font-size: 18px;
   line-height: 1;
@@ -603,7 +575,7 @@ a {
   padding-top: 30px;
 }
 
-/* line 342, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 327, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text p {
   font-size: 18px;
   line-height: 1;
@@ -611,7 +583,7 @@ a {
   color: #eeece3;
 }
 
-/* line 347, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 332, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact {
   display: flex;
   justify-content: space-between;
@@ -619,18 +591,18 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 347, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 332, ../projects/CyberCoffee/SASS/cookie.scss */
   .contact {
     display: block;
   }
 }
 
-/* line 354, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 339, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact img {
   align-self: flex-end;
 }
 
-/* line 357, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 342, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact input {
   padding: 10px;
   margin-top: 50px;
@@ -647,14 +619,14 @@ a {
   transition: 0.80s;
 }
 
-/* line 367, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 352, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact input:hover {
   border: 2px solid #443ab4;
   color: #131313;
   background: #443ab4;
 }
 
-/* line 379, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 362, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer {
   background-color: #24243e;
   display: flex;
@@ -664,14 +636,14 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 379, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 362, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-footer {
     display: block;
     justify-content: flex-start;
   }
 }
 
-/* line 390, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 373, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer h2 {
   font-size: 20px;
   line-height: 1;
@@ -680,31 +652,31 @@ a {
   color: #eeece3;
 }
 
-/* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 376, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer ul {
   display: flex;
 }
 
 @media screen and (max-width: 636px) {
-  /* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 376, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-footer ul {
     display: block;
   }
 }
 
-/* line 399, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 382, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer li {
   padding-top: 20px;
   padding-left: 40px;
 }
 
-/* line 402, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 385, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer li img {
   min-width: 10px;
   min-height: 10px;
 }
 
-/* line 410, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter input {
   width: 200px;
   min-width: 100px;
@@ -715,13 +687,13 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 410, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
   .newsletter input {
     padding-top: 40px;
   }
 }
 
-/* line 421, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 404, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter input {
   font-size: 20px;
   line-height: 1;
@@ -729,7 +701,7 @@ a {
   color: #eeece3;
 }
 
-/* line 424, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 407, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter button {
   cursor: pointer;
   border: none;

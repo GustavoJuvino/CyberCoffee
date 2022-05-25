@@ -173,8 +173,8 @@ a{
             display:block;
         }
     }
-    .main-title, .main-title2{
-        @include title-text(28px);
+    h2{
+        @include title-text(48px);
     }
     .main-info{
         @include title-text(18px);
@@ -245,7 +245,7 @@ a{
     // CARDS EFFECTS
     .card:hover{
         height: 528px;
-        transform: translateY(30px);
+        transform: translate3d(0, -30px, 0);
         @include display(small){
            transform:none;
            height: auto;
@@ -280,21 +280,6 @@ a{
         display:block;
     }
 }
-
-
-.main-text3{
-    padding-bottom: 25px;
-    @include text-p(20px, $color-secondary);
-    border-bottom: 2px solid $dark-purple;
-    @include display(small){
-        @include text-p(14px, $color-secondary);
-        padding-top: 30px;
-    }
-    @include display(small){
-        padding-top: 18px;
-    }
-}
-
 .container-image{
     margin-top: 15px;
     display: flex;
@@ -372,8 +357,6 @@ a{
     }
 
 }
-
-
 
 // Footer
 .container-footer{
