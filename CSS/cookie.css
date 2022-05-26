@@ -30,7 +30,7 @@ a {
   overflow-y: hidden !important;
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1000px) {
   /* line 20, ../projects/CyberCoffee/SASS/cookie.scss */
   .header-img {
     height: auto;
@@ -74,10 +74,10 @@ a {
   color: #eeece3;
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1000px) {
   /* line 44, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .header-nav .header-list ul {
-    padding-top: 50px;
+    display: block;
   }
 }
 
@@ -95,31 +95,25 @@ a {
   padding-left: 40px;
 }
 
-@media screen and (max-width: 636px) {
+@media screen and (max-width: 1000px) {
   /* line 56, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .header-nav .header-list li {
-    padding-left: 5px;
-    font-size: 14px;
-    line-height: 1;
-    font-weight: bold;
-    font-family: "Roboto Mono", monospace;
-    color: #eeece3;
-    transition: 0.8s;
+    padding-top: 18px;
   }
 }
 
-/* line 65, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 71, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .header-nav .header-list a {
   color: white;
   transition: 0.8s;
 }
 
-/* line 68, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 74, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .header-nav .header-list a:hover {
   color: #5a4cec;
 }
 
-/* line 73, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 79, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .header-nav .header-list input {
   font-size: 20px;
   line-height: 1;
@@ -138,8 +132,16 @@ a {
   transition: 0.90s;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 79, ../projects/CyberCoffee/SASS/cookie.scss */
+  .container-header .header-nav .header-list input {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 636px) {
-  /* line 73, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 79, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .header-nav .header-list input {
     font-size: 10px;
     line-height: 1;
@@ -151,35 +153,28 @@ a {
   }
 }
 
-/* line 90, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 100, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .header-nav .header-list input:hover {
   border: 2px solid #443ab4;
   color: white;
   background: #443ab4;
 }
 
-/* line 98, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 108, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts {
   display: block;
   align-items: flex-start;
   margin-top: 180px;
 }
 
-@media screen and (max-width: 1430px) {
-  /* line 98, ../projects/CyberCoffee/SASS/cookie.scss */
-  .container-header .img-texts {
-    padding-top: 100px;
-  }
-}
-
 @media screen and (max-width: 636px) {
-  /* line 98, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 108, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts {
     padding-top: 10px;
   }
 }
 
-/* line 108, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 115, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts h1 {
   font-size: 200px;
   line-height: 1;
@@ -188,19 +183,15 @@ a {
   color: #eeece3;
 }
 
-@media screen and (max-width: 1430px) {
-  /* line 108, ../projects/CyberCoffee/SASS/cookie.scss */
+@media screen and (max-width: 1000px) {
+  /* line 115, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts h1 {
-    font-size: 120px;
-    line-height: 1;
-    font-weight: bold;
-    font-family: "Roboto Mono", monospace;
-    color: #eeece3;
+    font-size: 60px;
   }
 }
 
 @media screen and (max-width: 636px) {
-  /* line 108, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 115, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts h1 {
     font-size: 40px;
     line-height: 1;
@@ -210,7 +201,7 @@ a {
   }
 }
 
-/* line 117, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 124, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts h2 {
   margin-top: 50px;
   font-size: 32px;
@@ -220,8 +211,15 @@ a {
   color: #eeece3;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 124, ../projects/CyberCoffee/SASS/cookie.scss */
+  .container-header .img-texts h2 {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 636px) {
-  /* line 117, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 124, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts h2 {
     font-size: 12px;
     line-height: 1;
@@ -231,7 +229,7 @@ a {
   }
 }
 
-/* line 124, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 134, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts p {
   margin-top: 20px;
   font-size: 28px;
@@ -240,8 +238,19 @@ a {
   color: #eeece3;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 134, ../projects/CyberCoffee/SASS/cookie.scss */
+  .container-header .img-texts p {
+    font-size: 20px;
+  }
+  /* line 139, ../projects/CyberCoffee/SASS/cookie.scss */
+  .container-header .img-texts p .br-active {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 636px) {
-  /* line 124, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 134, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts p {
     font-size: 14px;
     line-height: 1;
@@ -252,7 +261,7 @@ a {
   }
 }
 
-/* line 134, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 151, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts input {
   font-size: 32px;
   line-height: 1;
@@ -269,8 +278,17 @@ a {
   transition: 0.90s;
 }
 
+@media screen and (max-width: 1000px) {
+  /* line 151, ../projects/CyberCoffee/SASS/cookie.scss */
+  .container-header .img-texts input {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width: 636px) {
-  /* line 134, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 151, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-header .img-texts input {
     font-size: 10px;
     line-height: 1;
@@ -282,14 +300,14 @@ a {
   }
 }
 
-/* line 149, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 171, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-header .img-texts input:hover {
   border: 2px solid #443ab4;
   color: white;
   background: #443ab4;
 }
 
-/* line 162, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 184, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main {
   padding: 80px;
   background-image: linear-gradient(#0f0c29, #302b63, #24243e);
@@ -297,26 +315,26 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 162, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 184, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-main {
     padding: 5px;
   }
 }
 
-/* line 169, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 191, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main .main-flex {
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 636px) {
-  /* line 169, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 191, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-main .main-flex {
     display: block;
   }
 }
 
-/* line 176, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 198, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main h2 {
   font-size: 48px;
   line-height: 1;
@@ -325,7 +343,7 @@ a {
   color: #eeece3;
 }
 
-/* line 179, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 201, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main .main-info {
   font-size: 18px;
   line-height: 1;
@@ -336,13 +354,13 @@ a {
   border-top: 2px solid #7b7bb3;
 }
 
-/* line 183, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 205, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main .main-info span {
   color: #7c7c7c;
   margin-right: 10px;
 }
 
-/* line 188, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 210, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-main .main-text {
   font-size: 22px;
   line-height: 1;
@@ -354,7 +372,7 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 188, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 210, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-main .main-text {
     font-size: 14px;
     line-height: 1;
@@ -364,14 +382,14 @@ a {
   }
 }
 
-/* line 201, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 223, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* line 205, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 227, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card {
   margin-top: 26px;
   flex-direction: column;
@@ -389,14 +407,14 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 205, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 227, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card {
     height: auto;
     width: 240px;
   }
 }
 
-/* line 223, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 245, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card h3 {
   font-size: 20px;
   line-height: 1;
@@ -405,12 +423,12 @@ a {
   color: #eeece3;
 }
 
-/* line 226, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 248, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card span {
   color: #7c7c7c;
 }
 
-/* line 229, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 251, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card h1 {
   font-size: 28px;
   line-height: 1;
@@ -421,13 +439,13 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 229, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 251, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card h1 {
     text-align: left;
   }
 }
 
-/* line 236, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 258, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card p {
   font-size: 20px;
   line-height: 1;
@@ -438,27 +456,27 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 236, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 258, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card p {
     text-align: left;
   }
 }
 
-/* line 246, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 268, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card:hover {
   height: 528px;
   transform: translate3d(0, -30px, 0);
 }
 
 @media screen and (max-width: 636px) {
-  /* line 246, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 268, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card:hover {
     transform: none;
     height: auto;
   }
 }
 
-/* line 255, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 277, ../projects/CyberCoffee/SASS/cookie.scss */
 .card-list .card img:hover {
   transition: 0.2s;
   width: 300px;
@@ -466,7 +484,7 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 255, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 277, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card img:hover {
     width: 150px;
     height: 150px;
@@ -474,14 +492,14 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 264, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 286, ../projects/CyberCoffee/SASS/cookie.scss */
   .card-list .card img {
     width: 150px;
     height: 150px;
   }
 }
 
-/* line 275, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 297, ../projects/CyberCoffee/SASS/cookie.scss */
 .main-flex2 {
   padding-top: 140px;
   display: flex;
@@ -489,13 +507,13 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 275, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 297, ../projects/CyberCoffee/SASS/cookie.scss */
   .main-flex2 {
     display: block;
   }
 }
 
-/* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 305, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-image {
   margin-top: 15px;
   display: flex;
@@ -506,33 +524,26 @@ a {
   overflow-y: hidden !important;
 }
 
-@media screen and (max-width: 1430px) {
-  /* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
-  .container-image {
-    flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 636px) {
-  /* line 283, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 305, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-image {
     margin-top: 0px;
   }
 }
 
-/* line 298, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 320, ../projects/CyberCoffee/SASS/cookie.scss */
 .together {
   min-width: 300px;
   width: 100%;
   height: 100%;
 }
 
-/* line 304, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 326, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text {
   min-width: 200px;
 }
 
-/* line 306, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 328, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text h3 {
   display: flex;
   justify-content: space-between;
@@ -547,7 +558,7 @@ a {
   color: #eeece3;
 }
 
-/* line 315, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 337, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text sup {
   font-size: 20px;
   line-height: 1;
@@ -555,7 +566,7 @@ a {
   color: #eeece3;
 }
 
-/* line 318, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 340, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text .sobre {
   font-size: 20px;
   line-height: 1;
@@ -565,7 +576,7 @@ a {
   color: #464646;
 }
 
-/* line 323, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 345, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text h4 {
   font-size: 18px;
   line-height: 1;
@@ -575,7 +586,7 @@ a {
   padding-top: 30px;
 }
 
-/* line 327, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 349, ../projects/CyberCoffee/SASS/cookie.scss */
 .img-text p {
   font-size: 18px;
   line-height: 1;
@@ -583,7 +594,7 @@ a {
   color: #eeece3;
 }
 
-/* line 332, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 354, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact {
   display: flex;
   justify-content: space-between;
@@ -591,18 +602,18 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 332, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 354, ../projects/CyberCoffee/SASS/cookie.scss */
   .contact {
     display: block;
   }
 }
 
-/* line 339, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 361, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact img {
   align-self: flex-end;
 }
 
-/* line 342, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 364, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact input {
   padding: 10px;
   margin-top: 50px;
@@ -619,14 +630,14 @@ a {
   transition: 0.80s;
 }
 
-/* line 352, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 374, ../projects/CyberCoffee/SASS/cookie.scss */
 .contact input:hover {
   border: 2px solid #443ab4;
   color: #131313;
   background: #443ab4;
 }
 
-/* line 362, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 384, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer {
   background-color: #24243e;
   display: flex;
@@ -636,14 +647,14 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 362, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 384, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-footer {
     display: block;
     justify-content: flex-start;
   }
 }
 
-/* line 373, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 395, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer h2 {
   font-size: 20px;
   line-height: 1;
@@ -652,31 +663,31 @@ a {
   color: #eeece3;
 }
 
-/* line 376, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 398, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer ul {
   display: flex;
 }
 
 @media screen and (max-width: 636px) {
-  /* line 376, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 398, ../projects/CyberCoffee/SASS/cookie.scss */
   .container-footer ul {
     display: block;
   }
 }
 
-/* line 382, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 404, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer li {
   padding-top: 20px;
   padding-left: 40px;
 }
 
-/* line 385, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 407, ../projects/CyberCoffee/SASS/cookie.scss */
 .container-footer li img {
   min-width: 10px;
   min-height: 10px;
 }
 
-/* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 415, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter input {
   width: 200px;
   min-width: 100px;
@@ -687,13 +698,13 @@ a {
 }
 
 @media screen and (max-width: 636px) {
-  /* line 393, ../projects/CyberCoffee/SASS/cookie.scss */
+  /* line 415, ../projects/CyberCoffee/SASS/cookie.scss */
   .newsletter input {
     padding-top: 40px;
   }
 }
 
-/* line 404, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 426, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter input {
   font-size: 20px;
   line-height: 1;
@@ -701,7 +712,7 @@ a {
   color: #eeece3;
 }
 
-/* line 407, ../projects/CyberCoffee/SASS/cookie.scss */
+/* line 429, ../projects/CyberCoffee/SASS/cookie.scss */
 .newsletter button {
   cursor: pointer;
   border: none;

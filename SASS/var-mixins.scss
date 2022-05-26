@@ -8,8 +8,8 @@ $purple-1: #302b63;
 $purple-2: #24243e;
 $purple-3: #443ab4;
 
-$l-device: 1430px;
-$m-device: 768px;
+// $l-device: 1430px;
+$m-device: 1000px;
 $s-device: 636px;
 
 
@@ -31,12 +31,8 @@ $s-device: 636px;
 }
 
 @mixin display($size) {
-    @if $size == large {
-      @media screen and (max-width: #{$l-device}) {
-        @content;
-      }
-    } @else if $size == medium {
-      @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device - 1}) {
+    @if $size == medium {
+      @media screen and (max-width: #{$m-device}){
         @content;
       }
     } @else if $size == small {

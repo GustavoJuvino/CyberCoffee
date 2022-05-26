@@ -25,7 +25,7 @@ a{
     height: 100vh;
     overflow-x: hidden !important; 
     overflow-y: hidden !important;
-    @include display(large){
+    @include display(medium){
         height: auto;
     }
 }
@@ -45,8 +45,8 @@ a{
                 display: flex;
                 transition: 0.8s;
                 @include title-text(20px);
-                @include display(large){
-                    padding-top: 50px;
+                @include display(medium){
+                    display: block;
                 }
                 @include display(small){
                     padding-top: 10px;
@@ -56,11 +56,17 @@ a{
             li{
                 font-size: 16px;
                 padding-left: 40px;
-                @include display(small){
-                padding-left: 5px;
-                @include title-text(14px);
-                transition: 0.8s;
-            }
+                @include display(medium){
+                    padding-top: 18px;
+                }
+            //     @include display(small){
+            //     padding-left: 5px;
+            //     @include title-text(14px);
+            //     transition: 0.8s;
+            //     @include display(large){
+            //         padding-top: 16px;
+            //     }
+            // }
             }
             a{
                 color: white;
@@ -82,6 +88,10 @@ a{
                 font-size: 20px;
                 cursor: pointer;
                 transition: 0.90s;
+                @include display(medium){
+                    margin-top: 40px; 
+                    margin-left: 10px;
+                }
                 @include display(small){
                 @include title-text(10px);
                     width: 100px;
@@ -99,16 +109,13 @@ a{
         display:block;
         align-items: flex-start;
         margin-top: 180px;
-        @include display(large){
-            padding-top: 100px;
-        }
         @include display(small){
             padding-top: 10px;
         }
         h1{
             @include title-text(200px);
-            @include display(large){
-                @include title-text(120px);
+            @include display(medium){
+                font-size: 60px;
             }
             @include display(small){
                 @include title-text(40px);
@@ -117,6 +124,9 @@ a{
         h2{
             margin-top: 50px;
             @include title-text(32px);
+            @include display(medium){
+                margin-top: 40px;
+            }
             @include display(small){
                 @include title-text(12px);
             }
@@ -124,10 +134,17 @@ a{
         p{
             margin-top: 20px;
             @include text-p(28px, $color-main);
+            @include display(medium){
+                font-size: 20px;
+                .br-active{
+                    display: none;
+                }
+            }
             @include display(small){
                 @include title-text(14px);
                 padding-top: 18px;
             }
+
         }
         
         // SECOND BUTTON
@@ -141,6 +158,11 @@ a{
             border-radius: 15px;
             cursor: pointer;
             transition: 0.90s;
+            @include display(medium){
+                width: 200px;
+                height: 60px;
+                font-size: 24px;
+            }
             @include display(small){
                 @include title-text(10px);
                 width: 100px;
